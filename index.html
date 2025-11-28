@@ -301,6 +301,92 @@
             line-height: 1.8;
         }
 
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 120px 60px;
+            background: linear-gradient(180deg, #0a0a0a 0%, #0f172a 100%);
+        }
+
+        .testimonials-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            background: rgba(16, 185, 129, 0.05);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 80px;
+            font-weight: 900;
+            color: rgba(16, 185, 129, 0.1);
+            line-height: 1;
+        }
+
+        .testimonial-stars {
+            color: #fbbf24;
+            font-size: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-text {
+            font-size: 17px;
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial-avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .testimonial-info h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #10b981;
+            margin-bottom: 4px;
+        }
+
+        .testimonial-info p {
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
         /* Services Section */
         .services-section {
             padding: 120px 60px;
@@ -562,11 +648,11 @@
                 display: flex;
             }
 
-            .hero, .features-section, .services-section, .process-section, .stats-section, .cta-section {
+            .hero, .features-section, .services-section, .process-section, .stats-section, .cta-section, .testimonials-section {
                 padding: 80px 30px;
             }
 
-            .features-grid, .services-grid, .stats-grid {
+            .features-grid, .services-grid, .stats-grid, .testimonials-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -587,6 +673,7 @@
         <div class="logo">AXEN <span>GROWTH</span></div>
         <ul class="nav-links">
             <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
             <li><a href="#process">How It Works</a></li>
             <li><a href="#booking">Book a Call</a></li>
         </ul>
@@ -704,6 +791,82 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-header">
+            <h2>Client <span class="highlight">Success Stories</span></h2>
+            <p>See what business owners are saying about working with AXEN Growth</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">AXEN Growth completely transformed our lead generation. Within 60 days, our qualified leads increased by 340% and our cost per acquisition dropped significantly. Their AI chatbot handles inquiries 24/7, which has been a game-changer for our team.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MR</div>
+                    <div class="testimonial-info">
+                        <h4>Marcus Rodriguez</h4>
+                        <p>CEO, Summit Real Estate Group</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">We were spending hours on manual follow-ups and losing potential clients. AXEN set up automated workflows that nurture leads while we focus on closing deals. Our revenue has grown 2.5x since partnering with them. Highly recommend!</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">SK</div>
+                    <div class="testimonial-info">
+                        <h4>Sarah Kim</h4>
+                        <p>Founder, Elevate Coaching Co.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">The team at AXEN Growth truly understands digital marketing and AI automation. They built us a complete CRM system with intelligent chatbots that book appointments automatically. Our show rate improved by 65% and we've saved 20+ hours per week.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">JT</div>
+                    <div class="testimonial-info">
+                        <h4>James Thompson</h4>
+                        <p>Owner, Prime Fitness Studios</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">As a small business owner, I was skeptical about AI and automation. AXEN made the entire process seamless and the results speak for themselves. My Meta ads are performing better than ever, and the automated SMS campaigns have dramatically improved customer retention.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">LP</div>
+                    <div class="testimonial-info">
+                        <h4>Lisa Patel</h4>
+                        <p>Owner, Bloom Beauty Spa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">AXEN Growth delivered exactly what they promised. Our new website converts visitors at nearly 3x our old rate, and their AI-powered lead nurturing system has been incredible. They're not just service providers, they're true partners in our growth.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">DW</div>
+                    <div class="testimonial-info">
+                        <h4>David Williams</h4>
+                        <p>Director, Apex Financial Advisors</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">Working with AXEN has been transformative for our dental practice. Their social media strategy brought in 40+ new patients in the first month, and the automated appointment reminders reduced our no-shows by 70%. Best investment we've made.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">AC</div>
+                    <div class="testimonial-info">
+                        <h4>Dr. Amanda Chen</h4>
+                        <p>Founder, Smile Bright Dentistry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Process Section -->
     <section class="process-section" id="process">
         <div class="section-header">
@@ -804,7 +967,7 @@
         }, observerOptions);
 
         // Observe all cards and sections
-        document.querySelectorAll('.stat-item, .feature-card, .service-card, .timeline-item').forEach(el => {
+        document.querySelectorAll('.stat-item, .feature-card, .service-card, .timeline-item, .testimonial-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(40px)';
             el.style.transition = 'all 0.8s ease';
