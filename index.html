@@ -406,6 +406,96 @@
             opacity: 0.8;
         }
 
+        /* Reviews Section */
+        .reviews-section {
+            padding: 120px 60px;
+            background: linear-gradient(180deg, #0f172a 0%, #0a0a0a 100%);
+        }
+
+        .reviews-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .review-card {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .review-card:hover {
+            transform: translateY(-10px);
+            background: rgba(16, 185, 129, 0.05);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .review-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 80px;
+            color: rgba(16, 185, 129, 0.2);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .review-content {
+            position: relative;
+            z-index: 2;
+            margin-top: 30px;
+        }
+
+        .review-text {
+            font-size: 18px;
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .review-info h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .review-info p {
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
         /* Calendar Section */
         .calendar-section {
             padding: 120px 60px;
@@ -588,6 +678,7 @@
         <div class="logo">AXEN <span>GROWTH</span></div>
         <ul class="nav-links">
             <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
             <li><a href="#process">How It Works</a></li>
             <li><a href="#booking">Book a Call</a></li>
         </ul>
@@ -736,6 +827,55 @@
         </div>
     </section>
 
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="section-header">
+            <h2>What Our <span class="highlight">Clients Say</span></h2>
+            <p>Trusted by businesses ready to scale with AI</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">AXEN Growth transformed our marketing completely. Their AI CRM system helped us automate lead follow-ups, and we saw a 3x increase in conversions within the first month.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">JM</div>
+                        <div class="review-info">
+                            <h4>James Mitchell</h4>
+                            <p>CEO, TechStart Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">The team at AXEN made integrating AI into our business effortless. Our customer response time went from hours to seconds, and our clients love the instant support.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">SR</div>
+                        <div class="review-info">
+                            <h4>Sarah Rodriguez</h4>
+                            <p>Founder, Wellness Pro Clinic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Professional, responsive, and results-driven. Their Meta ads strategy brought us qualified leads at half our previous cost. Highly recommend their services!</p>
+                    <div class="review-author">
+                        <div class="review-avatar">DK</div>
+                        <div class="review-info">
+                            <h4>David Kim</h4>
+                            <p>Owner, Premier Real Estate Group</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Calendar Section -->
     <section class="calendar-section" id="booking">
         <div class="section-header">
@@ -754,14 +894,14 @@
         <p>Let's integrate AI into your business and maximize your profits</p>
         <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
             <button class="cta-button-white" onclick="window.location.href='#booking'">Book a Call</button>
-            <button class="secondary-button" style="background: rgba(255,255,255,0.1); border-color: white;" onclick="window.location.href='mailto:growthaxen@gmail.com'">Email Us</button>
+            <button class="secondary-button" style="background: rgba(255,255,255,0.1); border-color: white;" onclick="window.location.href='mailto:contact@axen-growth.com'">Email Us</button>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <p><strong>AXEN Growth</strong> - AI-Powered Business Solutions</p>
-        <p>Email: <a href="mailto:growthaxen@gmail.com">growthaxen@gmail.com</a></p>
+        <p>Email: <a href="mailto:contact@axen-growth.com">contact@axen-growth.com</a></p>
         <p>Website: <a href="https://axengrowth.com" target="_blank">axengrowth.com</a></p>
         <p style="margin-top: 30px;">© 2025 AXEN Growth LLC. All rights reserved.</p>
     </footer>
@@ -805,7 +945,7 @@
         }, observerOptions);
 
         // Observe all cards and sections
-        document.querySelectorAll('.stat-item, .feature-card, .service-card, .timeline-item').forEach(el => {
+        document.querySelectorAll('.stat-item, .feature-card, .service-card, .timeline-item, .review-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(40px)';
             el.style.transition = 'all 0.8s ease';
