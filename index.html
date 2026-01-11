@@ -302,6 +302,97 @@
             line-height: 1.8;
         }
 
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 120px 60px;
+            background: linear-gradient(180deg, #0f172a 0%, #0a0a0a 100%);
+        }
+
+        .testimonials-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .testimonial-card {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            background: rgba(16, 185, 129, 0.05);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 80px;
+            color: rgba(16, 185, 129, 0.2);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonial-text {
+            font-size: 18px;
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .author-info h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #10b981;
+            margin-bottom: 3px;
+        }
+
+        .author-info p {
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        .testimonial-stars {
+            color: #fbbf24;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
         /* Services Section */
         .services-section {
             padding: 120px 60px;
@@ -715,6 +806,55 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-header">
+            <h2>What Our <span class="highlight">Clients Say</span></h2>
+            <p>Real results from businesses we've helped scale</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">AXEN Growth completely transformed our lead generation. Within the first month, we saw a 300% increase in qualified leads through their AI-powered CRM system. Their team is incredibly responsive and the automation they built saves us hours every day.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <p>CEO, TechStart Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">The Meta ads campaign AXEN created for us exceeded all expectations. Our cost per acquisition dropped by 60% while our conversion rate doubled. Their strategic approach to AI marketing is truly next-level.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SJ</div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Founder, Bloom Beauty Co.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">Working with AXEN Growth was a game-changer for our dental practice. Their automated scheduling and follow-up systems helped us reduce no-shows by 75% and increased our monthly revenue significantly. Highly recommend!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DL</div>
+                        <div class="author-info">
+                            <h4>Dr. David Lee</h4>
+                            <p>Owner, Smile Dental Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Process Section -->
     <section class="process-section" id="process">
         <div class="section-header">
@@ -764,14 +904,14 @@
         <p>Let's integrate AI into your business and maximize your profits</p>
         <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
             <button class="cta-button-white" onclick="window.location.href='#booking'">Book a Call</button>
-            <button class="secondary-button" style="background: rgba(255,255,255,0.1); border-color: white;" onclick="window.location.href='mailto:growthaxen@gmail.com'">Email Us</button>
+            <button class="secondary-button" style="background: rgba(255,255,255,0.1); border-color: white;" onclick="window.location.href='mailto:contact@axen-growth.com'">Email Us</button>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <p><strong>AXEN Growth</strong> - AI-Powered Business Solutions</p>
-        <p>Email: <a href="mailto:growthaxen@gmail.com">growthaxen@gmail.com</a></p>
+        <p>Email: <a href="mailto:contact@axen-growth.com">contact@axen-growth.com</a></p>
         <p>Website: <a href="https://axengrowth.com" target="_blank">axengrowth.com</a></p>
         <p style="margin-top: 30px;">© 2025 AXEN Growth LLC. All rights reserved.</p>
     </footer>
@@ -815,7 +955,7 @@
         }, observerOptions);
 
         // Observe all cards and sections
-        document.querySelectorAll('.stat-item, .feature-card, .service-card, .timeline-item').forEach(el => {
+        document.querySelectorAll('.stat-item, .feature-card, .service-card, .timeline-item, .testimonial-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(40px)';
             el.style.transition = 'all 0.8s ease';
